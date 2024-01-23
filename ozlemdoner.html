@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+      .accordion {
+         background-color: #eee;
+         color: #444;
+         cursor: pointer;
+         padding: 18px;
+         width: 100%;
+         border: none;
+         text-align: left;
+         outline: none;
+         font-size: 15px;
+         transition: 0.4s;
+      }
+
+      .baslik {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .baslik img {
+         max-width: 100%;
+         height: auto;
+      }
+
+      .cizgi {
+         color: red;
+         font-size: 2px;
+         background-color: red;
+         height: 3px;
+      }
+
+      h1 {
+         text-align: center;
+         font-size: 50px;
+
+      }
+
+      .tavsiye {
+         text-align: center;
+         font-size: 25px;
+      }
+
+      .begenilen {
+         width: 20%;
+         float: left;
+      }
+
+      .begenilen img {
+         width: 300px;
+         padding-left: 70px;
+      }
+
+      .begenilen p {
+         padding-left: 70px;
+         font-size: 20px;
+      }
+
+      .accordion {
+         background-color: #df0008;
+         color: white;
+         padding: 40px;
+         font-size: 30px;
+      }
+
+      .panel .urun img {
+         width: 30%;
+         margin-top: 30px;
+         float: left;
+         margin-bottom: 30px;
+      }
+
+      .panel {
+         border: 7px solid grey;
+         margin: 30px;
+      }
+
+      .panel .urun .content {
+         float: left;
+         width: 70%;
+      }
+
+      .panel .urun h1 {
+         padding-right: 900px;
+      }
+
+      .panel .urun p {
+         font-size: 30px;
+         padding-left: 60px;
+      }
+
+      .active,
+      .accordion:hover {
+         text-decoration: underline;
+      }
+
+      .panel {
+         padding: 0 18px;
+         display: none;
+         background-color: white;
+         overflow: hidden;
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="baslik">
+      <img src="ozlemozlerdoner-logo.jpeg" alt="">
+   </div>
+   <br>
+   <p class="cizgi">p</p>
+   <br>
+   <br>
+   <br>
+
+   <h1 class="onerilen">Lezzetli Döner Çeşitleri ile Tanışın</h1>
+   <p class="tavsiye">Kaliteli malzemelerle hazırlanan enfes döner çeşitlerimiz sizleri bekliyor.</p>
+
+   <br>
+   <h1>En Çok Beğenilenler</h1>
+
+   <div class="hepsi">
+      <div class="begenilen">
+         <img src="kadayif.jpeg" alt="">
+         <p><strong>Kadayıf</strong></p>
+      </div>
+      <div class="begenilen">
+         <img src="ozlemdoner.jpeg" alt="">
+         <p><strong>Özlem Döner</strong></p>
+      </div>
+      <div class="begenilen">
+         <img src="gobitdoner.jpeg" alt="">
+         <p><strong>Gobit Döner</strong></p>
+      </div>
+      <div class="begenilen">
+         <img src="sosludoneriskender.jpeg" alt="">
+         <p><strong>Soslu Döner(İskender)</strong></p>
+      </div>
+      <div class="begenilen">
+         <img src="dönerdenbeyti.jpeg" alt="">
+         <p><strong>Dönerden Beyti</strong></p>
+      </div>
+   </div>
+
+   <h1>Menümüz</h1>
+
+   <button class="accordion">DÖNER ÇEŞİTLERİ</button>
+   <div class="panel">
+      <div class="urun">
+         <img src="pilavustu.jpeg" alt="">
+         <div class="content">
+            <h1>Pilav Üstü</h1>
+            <p>Pilav Üstü</p>
+            <p>300.00 TL</p>
+         </div>
+      </div>
+   </div>
+   </div>
+
+   <button class="accordion">PİDE ÇEŞİTLERİ</button>
+   <div class="panel">
+      <div class="urun">
+         <img src="kusbasilipide.jpeg" alt="">
+         <div class="content">
+            <h1>Kuşbaşılı Pide</h1>
+            <p>Kuşbaşılı Pide</p>
+            <p>285.00 TL</p>
+         </div>
+      </div>
+   </div>
+
+   <button class="accordion">ÇORBA</button>
+   <div class="panel">
+      <div class="urun">
+         <img src="tavukcorbasi.jpeg" alt="">
+         <div class="content">
+            <h1>Çorba</h1>
+            <p>Çorba</p>
+            <p>285.00 TL</p>
+         </div>
+      </div>
+   </div>
+
+   <button class="accordion">TATLI</button>
+   <div class="panel">
+      <div class="urun">
+         <img src="kadayif.jpeg" alt="">
+         <div class="content">
+            <h1>Kadayıf</h1>
+            <p>Cevizli Kadayıf</p>
+            <p>285.00 TL</p>
+         </div>
+      </div>
+   </div>
+
+   <button class="accordion">İÇECEKLER</button>
+   <div class="panel">
+      <div class="urun">
+         <img src="cocacola.png" alt="">
+         <div class="content">
+            <p>Cola</p>
+            <p>45.00 TL</p>
+         </div>
+      </div>
+   </div>
+
+   <footer>
+
+      <br>
+      <br>
+      <br>
+      <hr style="background-color: #df0008; height: 10px;">
+      <br>
+      <br>
+
+      <img style="margin-left: 850px;" src="ozlemozlerdoner-logo.jpeg" alt="">
+      <br>
+      <br>
+      <strong style="color: #df0008; float: left; font-size: 20px; margin-left: 770px;">ÖZLEM ÖZLER DÖNER - TEPE PRIME
+         AVENUE</strong>
+      <br>
+      <p style="color: #df0008; text-align: center; padding-left: 80px; font-size: 26px;">TEL : <a
+            style="color: #df0008; text-decoration: none;" href="tel:+03122621212">0312-262-62-62</a></p>
+      <p style="font-size: 20px; color: #df0008; text-align: center; padding-left: 100px;">ADRES : ESKİŞEHİR YOLU 9.KM
+         TEPE PRIME C BLOK</p>
+      <p style="font-size: 20px; color: #df0008; text-align: center; padding-left: 100px;">NO:7/B ANKARA/TÜRKİYE</p>
+      <br>
+      <a style="margin-left: 930px; color: #df0008; font-size: 30px; text-decoration: none;"
+         href="https://www.instagram.com/ozlemdoner/?hl=tr" target="_blank">Instagram</a>
+   </footer>
+   <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+         acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+               panel.style.display = "none";
+            } else {
+               panel.style.display = "block";
+            }
+         });
+      }
+   </script>
+
+</body>
+
+</html>
